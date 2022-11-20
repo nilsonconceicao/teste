@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto/Roboto-Regular.ttf');    
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('fonts/roboto/Roboto-Bold.ttf');    
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('fonts/roboto/Roboto-Thin.ttf');    
+}
+
 :root{
     --red: #E50914;
     --black: #141414;
@@ -11,9 +26,26 @@
 }
 
 body{
-    background: var(--black);
-    font-family: 'Atial', Times, serif;
+    background: black;
     color: white;
+    font-family: 'Roboto-Bold', Times, serif;
+    text-align: center;
+}
+
+.sobre{
+    font-size: 70pt;
+    font-family: 'Roboto', Times, serif;
+    color: black;
+    margin: auto;
+    text-align: center;
+}
+
+.the360{
+    font-size: 70pt;
+    font-family: 'Roboto-Bold', Times, serif;
+    color: black;
+    margin: auto;
+    text-align: center;
 }
 
 .main-box{
@@ -36,6 +68,59 @@ body{
     flex-direction: row;
 }
 
-.carousel{
-    margin-top: 5px;
+.rectangle {    
+    background-color: #f9ec00;
+}
+
+.rectangle-border {
+    width: fit-content;
+    padding: 1%;
+    background-color: #f9ec00;
+    border-radius: 30px;
+}
+
+.header{
+    background-image: linear-gradient( to bottom, #070706, #212120 );
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img{
+    width: 40%;
+}
+
+.footer {
+    background-image: linear-gradient( to bottom, #f4f4f4, #bfbfbe );
+    margin: auto;
+    text-align: center;
+}
+
+.footer-img{
+    width: 80%;
+}
+
+.cursos-condicoes{
+    font-size: 29pt;
+    font-family: 'Roboto', Times, serif;
+    background-color: black;
+    margin: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    color: white;
+}
+
+.cursos-condicoes-interno{
+    width: 50%;
+    margin: 5%;
+}
+
+.vertical {
+    border-left: 6px solid white;
+    height: 100%;
+    position:absolute;
+    left: 50%;
 }
